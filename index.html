@@ -1,0 +1,59 @@
+<DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>form</title>
+        
+        <link rel="stylesheet" href="form.css">
+    </head>
+
+    <body>
+        <div class="container">
+         <div class="form">
+            <form autocomplete="on" method="get" onsubmit="return false">
+                <h1>sign in</h1>
+                <label for="mail">Email</label><br>
+                <input type="email" id="mail" name="mail" placeholder="abc@gmail.com" size="30" required><br><br>
+                <label for="f-name">First Name</label><br>
+                <input type="text" id="f-name" name="f-name" placeholder="firstname" size="30" required><br><br>
+                <label for="l-name">Last Name</label><br>
+                <input type="text" id="l-name" name="l-name" placeholder="lastname" size="30" required><br><br>
+                <label for="no">Phone no</label><br>
+                <input type="tel" id="no" name="no" placeholder="99********" size="30" required><br><br>
+                <label for="dob">DOB</label><br>
+                <input type="date" id="dob" name="dob" size="30"><br><br>
+                <label for="gender">Gender</label><br>
+                <input type="radio" name="gender" value="male" id="male">Male
+                <input type="radio" name="gender" value="female"id="female">Female<br><br>
+                <input type="checkbox" name="terms" value="terms" class="terms">Terms and conditions<br><br>
+                <input type="submit" class="submit" value="Submit" onclick="managedata()">
+                <input type="reset" class="cancel" value="Cancel">
+            </form>
+            </div>
+            <div id="msg" style="font-size: 90px;"></div>
+      <div class="detailstable">
+        <table>
+            <tr>
+                <th>Id</th>
+                <th>Email</th>
+                <th>First-Name</th>
+                <th>Last-Name</th>
+                <th>Phone No</th>
+                <th>DOB</th>
+                <th>Gender</th>
+                <th>Action</th>
+            </tr>
+    	<tbody id="myTable">
+	
+        <tbody>
+        </table>
+        </div>
+        </div>
+        <script src="form.js"></script>  
+
+    </body>
+
+    </html>
